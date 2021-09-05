@@ -1,2 +1,3 @@
-# tradej
-tradej Harmony Edition
+trade-api
+功能齐全有交易、行情
+使用方法见示例
