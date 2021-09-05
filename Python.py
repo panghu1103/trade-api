@@ -204,5 +204,5 @@ b = Dll.HQ_PushData(ID, 0, Zqdm, 推送回调函数指针, True);#参数2 0为�
 if b > 0 :
     print('开启成功无提示')
 else:
-    print(ErrInfo.value.decode('gb2312'))
+    print(Out.value.decode('gb2312'))
 
