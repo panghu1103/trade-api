@@ -20,7 +20,7 @@ Dll.QueryHistoryData.restype = c_int
 
 print("交易接口测试—————————————————————————")
 qsid = 0
-host = c_buffer(b"trade.10jqka.com.cn")#这个是模拟炒股服务器地址     
+host = c_buffer(b"trade.10jqka.com.cn")#这个是模拟炒股服务器地址   实盘需联系授权 panghu1103@gmail.com  
 post  = 8002
 version = c_buffer(b"E065.18.81.002")
 yybid = c_buffer(b"")#营业部ID  多数券商不需要这个参数 如需要选择营业部情况下 需要这个参数
@@ -119,7 +119,7 @@ Host = c_buffer(b"112.17.10.222")#行情服务器IP
 Port = 9601#端口
 account = c_buffer(b"xxxxx")#自己的L2手机号 普通账号无法查询到L2数据
 password = c_buffer(b"xxxxx")#写自己要密码
-print("证券登录——————————————————————————")
+print("行情登录——————————————————————————")
 ClientID = Dll.HQ_Logon (Host, Port, account, password, Out)
 if ClientID:
     print("行情登录成功，客户端ID",ClientID)
