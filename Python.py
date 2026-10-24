@@ -24,6 +24,7 @@ print("交易接口测试——————————————————�
 qsid = 0
 host = c_buffer(b"IP地址")#实盘需联系授权  panghu1103@pm.me  telegram 量化群 https://t.me/+D5YoNkq_glwwOGJl
 
+
 post  = 8002
 version = c_buffer(b"版本号")
 yybid = c_buffer(b"")#营业部ID  多数券商不需要这个参数 如需要选择营业部情况下 需要这个参数
